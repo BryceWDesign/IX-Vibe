@@ -1,0 +1,75 @@
+# IX-Vibe Test Run Metadata Template (v0.1)
+# Save as: tests/runs/<RUN_ID>/metadata.yml
+
+run_id: "YYYYMMDD_STAGE_CONFIG_01"
+
+stage: "COUPON"          # COUPON | PANEL | SUBASSY
+config: "BASELINE"       # BASELINE | TREATED_A | TREATED_B | etc.
+
+date_local: "YYYY-MM-DD"
+time_local: "HH:MM"
+timezone: "America/Los_Angeles"
+
+operator: "NAME"
+location: "LAB / FACILITY"
+
+environment:
+  temperature_c: null
+  humidity_percent: null
+  notes: ""
+
+fixture:
+  description: ""
+  boundary_conditions: ""
+  torque_values_nm: ""
+  photos_reference: ""   # path or external reference
+
+instrumentation:
+  daq:
+    make_model: ""
+    sample_rate_hz: null
+    anti_aliasing: ""
+    filters: ""
+  sensors:
+    - type: "accelerometer"
+      make_model: ""
+      serial: ""
+      axis: "X/Y/Z or tri-ax"
+      mount_method: "stud/adhesive/wax"
+      location_description: ""
+    - type: "accelerometer"
+      make_model: ""
+      serial: ""
+      axis: "X/Y/Z or tri-ax"
+      mount_method: ""
+      location_description: ""
+
+excitation:
+  method: "impact_hammer"   # impact_hammer | shaker | impulse | acoustic
+  parameters: ""
+  notes: ""
+
+treatment:
+  applied: false
+  description: ""
+  placement_description: ""
+  added_mass_g: null
+  attachment_method: ""
+
+raw_data_files:
+  - filename: ""
+    type: "FRF"
+  - filename: ""
+    type: "SRS"
+  - filename: ""
+    type: "ACOUSTIC"
+
+processing:
+  script_version: ""
+  parameters: ""
+  notes: ""
+
+observations:
+  anomalies: ""
+  repeatability_notes: ""
+  safety_notes: ""
