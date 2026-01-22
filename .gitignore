@@ -1,0 +1,31 @@
+# IX-Vibe
+# Ignore generated data, results, and local tooling artifacts
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data & results (keep templates tracked; keep raw test dumps untracked)
+data/raw/
+results/output/
+results/plots/
+*.log
+
+# CAD / export artifacts (optional)
+*.stl
+*.step
+*.iges
+*.obj
+
+# IDE
+.vscode/
+.idea/
